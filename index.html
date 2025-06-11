@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Weather</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+
+  <!-- Toggle with Light/Dark Labels -->
+  <div class="toggle-container">
+    <span class="toggle-label">☀️ Light</span>
+    <label class="switch">
+      <input type="checkbox" onchange="toggleDarkMode()">
+      <span class="slider"></span>
+    </label>
+    <span class="toggle-label">🌙 Dark</span>
+  </div>
+
+  <h1>Check the Weather</h1>
+
+  <select id="citySelect">
+    <option value="Toronto">Toronto</option>
+    <option value="New York">New York</option>
+    <option value="London">London</option>
+    <option value="Tokyo">Tokyo</option>
+    <option value="Caracas">Caracas</option>
+    <option value="Buenos Aires">Buenos Aires</option>
+    <option value="Paris">Paris</option>
+    <option value="Barcelona">Barcelona</option>
+    <option value="Los Angeles">Los Angeles</option>
+    <option value="Sydney">Sydney</option>
+    <option value="Rome">Rome</option>
+    <option value="Mexico City">Mexico City</option>
+    <option value="Vancouver">Vancouver</option>
+    <option value="New Delhi">New Delhi</option>
+    <option value="Cairo">Cairo</option>
+  </select>
+  
+  <button onclick="getWeather()">Get Weather</button>
+
+  <div id="weather-info"></div>
+
+  <script src="weather.js"></script>
+</body>
+</html>
